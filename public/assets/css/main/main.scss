@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+//==========================================================================
+//Foundation
+//==========================================================================
+@import "foundation/_reset.scss";
+@import "foundation/_setting.scss";
+@import "foundation/_default.scss";
+@import "foundation/_base.scss";
+@import "foundation/_font.scss";
+
+//==========================================================================
+//Layout
+//==========================================================================
+@import "layout/_inner.scss";
+@import "layout/_page.scss";
+@import "layout/_header.scss";
+@import "layout/_footer.scss";
+@import "layout/_main.scss";
+
+//==========================================================================
+// ▼  Object  ▼
+//==========================================================================
+
+//-----------------------------------------------------------------
+//Component
+//-----------------------------------------------------------------
+@import "object/component/_btn.scss";
+@import "object/component/_ttl.scss";
+@import "object/component/_mv.scss";
+@import "object/component/_accordion.scss";
+@import "object/component/_table.scss";
+@import "object/component/_tab.scss";
+@import "object/component/_pager.scss";
+@import "object/component/_loader.scss";
+@import "object/component/_forms.scss";
+
+// -----------------------------------------------------------------
+// Project
+// -----------------------------------------------------------------
+@import "object/project/_operation.scss";
+
+// -----------------------------------------------------------------
+// Utility
+// -----------------------------------------------------------------
+@import "object/utility/_utility.scss";
+@import "object/utility/_common.scss";
+@import "object/utility/_responsive.scss";
+@import "object/utility/_animation.scss";
+@import "object/utility/_component.scss";
+// ============================================
+// ========  以下にカスタマイズCSSを記載  =========
+// ============================================
+
+// * {
+//   outline: 1px solid magenta;
+// }

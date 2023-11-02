@@ -1,0 +1,657 @@
+@page {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+* {
+    font-family: "MS Mincho", msmincho, serif;
+    color: #4f4f4f;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+}
+.invoice-box {
+    max-width: 187.76mm;
+    width: 100%;
+    margin: auto;
+
+    .page-break {
+        page-break-before: always !important;
+    }
+    .kozuka {
+        font-family: kozuka;
+    }
+    .d-none{
+        display: none;
+    }
+    table {
+        width: 100%;
+        line-height: 1;
+        text-align: left;
+        border-collapse: collapse;
+        margin: 0 auto;
+    }
+    .txt_c {
+        text-align: center !important;
+    }
+    .txt_r {
+        text-align: right !important;
+    }
+    .txt_l {
+        text-align: left !important;
+    }
+    .white {
+        color: white;
+    }
+    .bold {
+        font-family:'MS 明朝','MS Mincho',msmincho,hanserifjp,serif;
+        font-weight: bold;
+        color: #000;
+    }
+}
+
+/* ====  page_01  ====*/
+.page_01 {
+    max-width: 187.759mm;
+
+    &.header {
+        padding-top: 0;
+        .customer_address__wrap {
+            width: calc(191 / 145 * 230px);
+            // height: 65px;
+            padding-left: calc(191 / 145 * 28px);
+            word-wrap: break-word;
+            p {
+                font-size: 12pt;
+            }
+            .postal {
+                padding-top: 52px;
+                padding-bottom: calc(191 / 145 * 2px);
+            }
+            .address {
+                // padding-bottom: calc(191 / 145 * 19px);
+                height: calc(191 / 145 * 19px + 12px);
+            }
+            .customer_name {
+                font-size: 12pt;
+                word-wrap: break-word;
+            }
+        }
+        .published_date__wrap {
+            width: calc(191 / 145 * 168px);
+            height: 65px;
+            padding-top: 0;
+            padding-left: calc(191 / 145 * 94px);
+            p {
+                text-align: center;
+                width: 100%;
+            }
+            .date {
+                font-size: 10pt;
+                padding-bottom: calc(191 / 145 * 10px);
+                & + p {
+                    font-size: 12pt;
+                }
+            }
+        }
+
+        .showseki_logo {
+            width: 100%;
+            padding-left: calc(191 / 145 * 330px);
+            img {
+                width: calc(192 / 145 * 192px);
+                height: calc(191 / 145 * 35px);
+            }
+        }
+
+        .showseki_info {
+            width: max-width;
+            padding-top: calc(191 / 145 * 14px);
+            padding-left: calc(191 / 145 * 100px);
+            width: max-content;
+            p {
+                font-size: 10pt;
+                padding-bottom: 5px;
+                &:nth-last-of-type(2) {
+                    padding-bottom: 10px;
+                }
+            }
+        }
+
+        .total__wrap {
+            width: calc(191 / 145 * 225px);
+            height: 62px;
+            padding-top: calc(191 / 145 * 45px);
+            padding-left: calc(191 / 145 * 28px);
+            .total__inner {
+                padding: 2px;
+                border: 0.5px solid #000;
+                .border {
+                    padding: 2px;
+                    border: 0.5px solid #000;
+                    p {
+                        font-size: calc(191 / 145 * 9px);
+                        padding: calc(191 / 145 * 3px) 0;
+                        text-align: center;
+                        background-color: #0064ad;
+                        color: #fff;
+                    }
+                    div.kozuka {
+                        font-size: calc(191 / 145 * 20px);
+                        padding: calc(191 / 145 * 3px) 0 calc(191 / 145 * 4px);
+                        text-align: center;
+                        font-family: "kozuka", sans-serif;
+                    }
+                }
+            }
+        }
+
+        .greeting_ttl {
+            font-size: 14pt;
+            width: 100%;
+            height: calc(191 / 145 * 83px);
+            line-height: calc(191 / 145 * 83px);
+            text-align: center;
+            vertical-align: middle;
+        }
+        .greeting_dsc {
+            font-size: 11pt;
+            padding-left: calc(191 / 145 * 19px);
+            p {
+                padding-bottom: calc(191 / 145 * 8px);
+                &:nth-last-of-type(1) {
+                    padding-right: calc(191 / 145 * 19px);
+                    text-align: right;
+                }
+            }
+        }
+    }
+
+    &.details {
+        .table_ttl {
+            font-size: 12pt;
+            width: 100%;
+            height: 37px;
+            padding: 13px 0 0;
+            text-align: center;
+        }
+        .dsc_dtl {
+            border-top: 6.5px solid #0064ad;
+            margin-bottom: calc(191 / 145 * 12px);
+            tr {
+                &:nth-of-type(2n) {
+                    background: #dcebf7;
+                }
+
+                &:nth-last-of-type(1) td {
+                    text-align: right;
+                    font-size: 12pt;
+                }
+            }
+            td {
+                font-size: 10.5pt;
+                height: 23px;
+                line-height: 23px;
+                // padding: 0 calc(191 / 145 * 2px) 0 calc(191 / 145 * 5px);
+                // padding: 0 calc(191 / 145 * 2px) calc(191 / 145 * 4px) calc(191 / 145 * 5px);
+            }
+        }
+        .bank_account {
+            margin-left: calc(-191 / 145 * 2px);
+            td {
+                font-size: 9.2pt;
+                padding-bottom: 5px;
+
+                &:nth-of-type(1) div {
+                    width: 62px;
+                }
+
+                &:nth-of-type(2) div {
+                    width: 171px;
+                    // width: calc(191 / 145 * 150px);
+                }
+
+                &:nth-of-type(3) div {
+                    width: 110;
+                    // width: calc(191 / 145 * 126px);
+                }
+
+                &:nth-of-type(4) div {
+                    width: 140;
+                    // width: calc(191 / 145 * 153px);
+                }
+
+                &:nth-of-type(5) div {
+                    width: fit-content;
+                    // width: calc(191 / 145 * 55px);
+                }
+            }
+            tr:nth-last-of-type(1) td {
+                padding-bottom: 0;
+            }
+            .footer_cap {
+                padding-top: calc(191 / 145 * 20px);
+                text-align: center;
+            }
+        }
+    }
+}
+
+/* ====  page_02  ====*/
+.page_02 {
+    max-width: 186mm;
+    padding: 0 30px;
+    * {
+        font-size: 9.24pt;
+    }
+    &.header {
+        &.first,
+        &.loop {
+            padding-top:  38px;
+        }
+        .page_ttl {
+            width: max-content;
+            margin: 0 auto;
+            text-decoration: underline;
+            color: #000;
+        }
+
+        p,
+        div {
+            padding: 0 4px;
+        }
+        p {
+            padding-bottom: 4px;
+        }
+
+        .showseki_name,
+        .closing_date {
+            text-align: right;
+        }
+    }
+    &.details {
+        margin-bottom: 115px;
+        th {
+            text-align: center;
+            font-size: 10pt;
+            padding: 0.5px 0 1px;
+            font-weight: bold;
+            color: #000;
+            border-top: 1px solid #499ec3;
+            border-right: 1px solid #499ec3;
+            border-bottom: 1px solid #499ec3;
+        }
+        
+        tr {
+            th {
+                &:nth-of-type(1) {
+                    width: calc(450 / 520 * 100%);
+                    border-left: 1px solid #499ec3;
+                }
+                &:nth-of-type(2) {
+                    width: calc(70 / 520 * 100%);
+                }
+            }
+            td {
+                height: 14.2px;
+                padding:1.7px 3px 1.8px 3px;
+                border-right: 1px solid #499ec3;
+                &:nth-of-type(1) {
+                    border-left: 1px solid #499ec3;
+                }
+                &:nth-last-of-type(1) {
+                    text-align: right;
+                }
+            }
+        }
+
+        tbody tr {
+            &:nth-of-type(2n) {
+                background: #d6e2f0;
+            }
+            &:nth-last-of-type(1) td {
+                border-bottom: 1px solid #499ec3;
+            }
+        }
+    }
+}
+
+/* ====  page_03  ====*/
+.page_03 {
+    width: 100%;
+    // max-width: 182.88mm;
+    max-width: 185mm;
+    padding: 0 2mm;
+    border-collapse: collapse;
+    &.header {
+        &.first {
+            padding-top: 15px;
+        }
+        .invoice_code {
+            width: calc(191 / 145 * 175px);
+            border: 0.7mm solid #e1e7f4;
+            margin: 0 0 5px;
+            tr td {
+                padding: 8px 0;
+                text-align: center;
+                &:nth-of-type(1) {
+                    border-right: solid 0.3mm #e1e7f4;
+                    border-collapse: collapse;
+                    width: 66.666%;
+                }
+                &:nth-of-type(2) {
+                    width: 33.333%;
+                }
+                p {
+                    font-size: 7.32pt;
+                    width: 100%;
+                }
+            }
+        }
+
+        .page_counter {
+            font-size: 7.32pt;
+            text-align: right;
+            padding-top: 8px;
+            padding-right: 26px;
+            padding-bottom: 30px;
+        }
+
+        .address__wrap {
+            width: calc(191 / 145 * 261px);
+            height: 42px;
+            font-size: 7.32pt;
+            padding-left: calc(191 / 145 * 37px);
+            padding-bottom: 0;
+            p {
+                font-size: 12.96pt;
+                &:nth-of-type(1) {
+                    padding-bottom: 3px;
+                }
+            }
+        }
+        .page_name {
+            width: calc(191 / 145 * 215px);
+            height: 42px;
+            font-size: calc(191 / 145 * 11px);
+            text-align: center;
+            padding-bottom: 30px;
+        }
+        .customer_name {
+            height: 36px;
+            font-size: 12.96pt;
+            padding-top: 4px;
+            padding-bottom: 18px;
+            padding-left: calc(191 / 145 * 35px);
+            width: 100%;
+        }
+        .showseki_logo {
+            height: 36px;
+            img {
+                width: calc(191 / 145 * 210px);
+            }
+        }
+        .greeting_dsc {
+            padding-top: 37px;
+            padding-bottom: 12px;
+            p {
+                font-size: 10.08pt;
+                &:nth-of-type(2) {
+                    padding-bottom: 0.4mm;
+                }
+            }
+        }
+        .showseki_info {
+            width: fit-content;
+            padding-top: calc(191 / 145 * 5px);
+            padding-bottom: calc(191 / 145 * 21px);
+            padding-left: calc(191 / 145 * 35px);
+            p {
+                font-size: 9.1632pt;
+                padding-bottom: 1.2mm;
+                &:nth-last-of-type(1) {
+                    padding-bottom: 0;
+                }
+            }
+        }
+
+        .total_for_delivery {
+            width: calc(191 / 145 * 314px);
+            // width: calc(191 / 145 * 280px);
+            border: solid 1.2mm #499ec3;
+            padding-right: 10mm;
+            padding-bottom: 1mm;
+            margin: 0;
+            p {
+                font-size: 12pt;
+                padding: 8.5px 0;
+                font-weight: bold;
+                width: max-content;
+            }
+            tr td {
+                width: max-content;
+                &:nth-of-type(1) p {
+                    width: calc(191 / 145 * 160px);
+                    text-align: center;
+                }
+                &:nth-of-type(2) p {
+                    width: calc(191 / 145 * 120px);
+                    text-align: right;
+                }
+            }
+        }
+
+        .showseki_info_dtl {
+            padding-left: calc(191 / 145 * 50px);
+            border-top: 0.7mm solid #dae1f2;
+            border-left: 0.7mm solid #dae1f2;
+            border-collapse: collapse;
+            tr td {
+                font-size: 9.5pt;
+                padding: 0.5mm 0 0.5mm 0.5mm;
+                border-right: 0.7mm solid #dae1f2;
+                border-bottom: 0.7mm solid #dae1f2;
+                border-collapse: collapse;
+                &:nth-of-type(1) {
+                    width: calc(191 / 145 * 45px);
+                }
+                &:nth-of-type(2) {
+                    width: calc(191 / 145 * 85px);
+                }
+            }
+        }
+        .greeting_dsc_under_total {
+            font-size: 9pt;
+            padding: 0 0 3mm 1mm;
+        }
+    }
+
+    &.details_table_ttl__wrap {
+        p {
+            padding: 0 0 1.5mm 1mm;
+        }
+
+        td p {
+            &:nth-of-type(1) {
+                font-size: 9.24pt;
+            }
+
+            &:nth-of-type(2) {
+                font-size: 10.08pt;
+            }
+        }
+    }
+}
+
+.page_03.loop_page_head {
+    padding-top: 5.6mm;
+    .page_counter {
+        font-size: 7.32pt;
+        text-align: right;
+        padding-bottom: 1.5mm;
+    }
+    .customer_name,
+    .showseki_name,
+    .closing_date {
+        font-size: 9.24pt;
+        padding-bottom: 1.5mm;
+    }
+    .showseki_name,
+    .closing_date {
+        text-align: right;
+    }
+    .delivery_name {
+        font-size: 10.08pt;
+        padding-bottom: 1.5mm;
+    }
+}
+.page_03.details_list {
+    padding-bottom: 0;
+
+    tr {
+        td:nth-of-type(1) {
+            width: calc(10 / 182.88 * 100%);
+        }
+
+        td:nth-of-type(2) {
+            width: calc(20 / 182.88 * 100%);
+        }
+
+        td:nth-of-type(3) {
+            width: calc(9.43 / 182.88 * 100%);
+        }
+
+        td:nth-of-type(4) {
+            width: calc(51.53 / 182.88 * 100%);
+        }
+
+        td:nth-of-type(5) {
+            width: calc(10 / 182.88 * 100%);
+        }
+
+        td:nth-of-type(6) {
+            width: calc(7.36 / 182.88 * 100%);
+        }
+
+        td:nth-of-type(7) {
+            width: calc(15.23 / 182.88 * 100%);
+        }
+
+        td:nth-of-type(8) {
+            width: calc(7.86 / 182.88 * 100%);
+        }
+
+        td:nth-of-type(9) {
+            width: calc(16.52 / 182.88 * 100%);
+        }
+
+        td:nth-of-type(10) {
+            width: calc(12.97 / 182.88 * 100%);
+        }
+
+        td:nth-of-type(11) {
+            width: calc(22 / 182.88 * 100%);
+        }
+
+        &:nth-of-type(2n) {
+            background: #d6e2f0;
+        }
+
+        &:nth-of-type(1) td {
+            font-size: 7.32pt;
+            text-align: center !important;
+            border-top: solid 0.4mm #499ec3;
+            border-bottom: solid 0.4mm #499ec3;
+        }
+
+        &:nth-last-of-type(1) td {
+            border-bottom: solid 0.4mm #499ec3;
+        }
+
+        td {
+            font-size: 9.24pt;
+            height: 16.5px;
+            text-align: center;
+            border-right: solid 0.4mm #499ec3;
+            &:nth-of-type(1) {
+                border-left: solid 0.4mm #499ec3;
+            }
+
+            &:nth-of-type(4) {
+                text-align: left;
+                padding-left: 0.6mm;
+            }
+
+            &:nth-of-type(7),
+            &:nth-of-type(9),
+            &:nth-of-type(10),
+            &:nth-of-type(11) {
+                text-align: right;
+                padding-right: 0.6mm;
+            }
+        }
+    }
+}
+
+/*  ================================
+        ====     transportation     ====
+        ================================ */
+.transportation_report {
+    padding: 5.8mm 12.4mm 0 13mm;
+}
+
+.transportation_report .page-break {
+    page-break-after: always;
+}
+
+.transportation_report.body {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    width: 100%;
+    line-height: 1;
+    font-size: 10px;
+    margin-top: 15px;
+}
+
+.transportation_report.body tr:nth-of-type(1) td {
+    border-top: 2mm solid #0064ad;
+    text-align: center !important;
+}
+
+.transportation_report.body tr:nth-last-of-type(1) td:nth-of-type(1),
+.transportation_report.body tr:nth-last-of-type(2) td:nth-of-type(1) {
+    text-align: left;
+}
+
+.transportation_report.body td {
+    font-size: 10px;
+    padding: 3px 5px;
+    text-align: left;
+    border-right: solid 1px #222;
+    border-bottom: solid 1px #222;
+}
+
+.transportation_report.body tr td:nth-of-type(1) {
+    border-left: solid 1px #222;
+}
+
+.transportation_report.body tr td:nth-of-type(2),
+.transportation_report.body tr td:nth-of-type(3) {
+    text-align: left;
+}
+.header_sns_wrap{
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
+    padding: 1em;
+    margin-left: auto;
+    a{
+        display: block;
+        width: 5em;
+        img{
+            width: 100%;
+        }
+    }
+}

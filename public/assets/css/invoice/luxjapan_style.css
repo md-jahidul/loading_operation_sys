@@ -1,0 +1,903 @@
+@charset "UTF-8";
+@page {
+  margin: 0;
+}
+body {
+  margin: 0;
+}
+
+* {
+  font-family: "MS Mincho", msmincho, serif;
+  color: #333;
+  line-height: 0.9 !important;
+  padding: 0;
+  margin: 0;
+}
+
+.invoice-box {
+  max-width: 187.76mm;
+  width: 100%;
+  margin: auto;
+}
+.invoice-box .page-break {
+  page-break-before: always !important;
+}
+.invoice-box .page-break_auto {
+  page-break-before: auto !important;
+}
+.invoice-box .kozuka {
+  font-family: kozuka;
+}
+.invoice-box .d-none {
+  display: none;
+}
+.invoice-box table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+.invoice-box .txt_c {
+  text-align: center !important;
+}
+.invoice-box .txt_r {
+  text-align: right !important;
+}
+.invoice-box .txt_l {
+  text-align: left !important;
+}
+.invoice-box .bold {
+  font-family: "MS 明朝", "MS Mincho", msmincho, hanserifjp, serif;
+  font-weight: bold;
+  line-height: 0.7 !important;
+  color: #000;
+}
+.invoice-box .white {
+  color: #fff;
+}
+
+/* ====  page_01  ====*/
+.page_01 {
+  max-width: 187.759mm;
+}
+.page_01.header {
+  padding-top: 40px;
+}
+.page_01.header .customer_address__wrap {
+  width: 303px;
+  height: 65px;
+  padding-left: 37px;
+  word-wrap: break-word;
+}
+.page_01.header .customer_address__wrap p {
+  font-size: 12pt;
+}
+.page_01.header .customer_address__wrap .postal {
+  padding-top: 52px;
+  padding-bottom: 2.6344827586px;
+}
+.page_01.header .customer_address__wrap .address {
+  padding-bottom: 18px;
+  height: 37.0275862069px;
+}
+.page_01.header .customer_address__wrap .customer_name {
+  font-size: 12pt;
+  word-wrap: break-word;
+}
+.page_01.header .published_date__wrap {
+  width: 221.2965517241px;
+  height: 65px;
+  padding-top: 0;
+  padding-left: 123.8206896552px;
+}
+.page_01.header .published_date__wrap p {
+  text-align: center;
+  width: 100%;
+}
+.page_01.header .published_date__wrap .date {
+  font-size: 10pt;
+  padding-bottom: 13.1724137931px;
+}
+.page_01.header .published_date__wrap .date + p {
+  font-size: 12pt;
+}
+.page_01.header .showseki_logo {
+  width: 100%;
+  padding-left: 434.6896551724px;
+}
+.page_01.header .showseki_logo img {
+  width: 254.2344827586px;
+  height: 46.1034482759px;
+}
+.page_01.header .showseki_info {
+  width: max-width;
+  padding-top: 18.4413793103px;
+  padding-left: 131.724137931px;
+  padding-bottom: 20px;
+  width: -moz-max-content;
+  width: max-content;
+}
+.page_01.header .showseki_info p {
+  font-size: 10pt;
+  padding-bottom: 5px;
+}
+.page_01.header .showseki_info p:nth-last-of-type(2) {
+  padding-bottom: 10px;
+}
+.page_01.header .total__wrap {
+  width: 296.3793103448px;
+  height: 62px;
+  padding-top: 55px;
+  padding-left: 36.8827586207px;
+}
+.page_01.header .total__wrap .total__inner {
+  padding: 2px;
+  border: 0.5px solid #000;
+}
+.page_01.header .total__wrap .total__inner .border {
+  padding: 2px;
+  border: 0.5px solid #000;
+}
+.page_01.header .total__wrap .total__inner .border p {
+  font-size: 12px;
+  padding: 3px 0;
+  text-align: center;
+  background-color: #0064ad;
+  color: #fff;
+}
+.page_01.header .total__wrap .total__inner .border div.kozuka {
+  font-size: 26.3448275862px;
+  padding: 4px 0 5px;
+  text-align: center;
+  font-family: "kozuka", sans-serif;
+}
+.page_01.header .greeting_ttl {
+  font-size: 14pt;
+  width: 100%;
+  height: 109.3310344828px;
+  line-height: 109.3310344828px;
+  text-align: center;
+  vertical-align: middle;
+}
+.page_01.header .greeting_dsc {
+  font-size: 11pt;
+  padding-left: 25.0275862069px;
+}
+.page_01.header .greeting_dsc p {
+  padding-bottom: 5px;
+}
+.page_01.header .greeting_dsc p:nth-last-of-type(1) {
+  padding-right: 25.0275862069px;
+  text-align: right;
+}
+.page_01.details .table_ttl {
+  font-size: 12pt;
+  width: 100%;
+  height: 37px;
+  padding: 13px 0 0;
+  text-align: center;
+}
+.page_01.details .dsc_dtl {
+  border-top: 6.5px solid #0064ad;
+  margin-bottom: 15.8068965517px;
+}
+.page_01.details .dsc_dtl tr:nth-of-type(2n) {
+  background: #dcebf7;
+}
+.page_01.details .dsc_dtl tr:nth-last-of-type(1) td p {
+  text-align: right;
+  font-size: 12pt;
+}
+.page_01.details .dsc_dtl td {
+  vertical-align: middle;
+  font-size: 10.5pt;
+  height: 21px;
+  line-height: 21px;
+  padding: 0 4px 1px !important;
+}
+.page_01.details .bank_account {
+  margin-left: -2.6344827586px;
+}
+.page_01.details .bank_account td {
+  font-size: 9.2pt;
+  padding-bottom: 5px;
+}
+.page_01.details .bank_account td:nth-of-type(1) div {
+  width: 62px;
+}
+.page_01.details .bank_account td:nth-of-type(2) div {
+  width: 171px;
+}
+.page_01.details .bank_account td:nth-of-type(3) div {
+  width: 110;
+}
+.page_01.details .bank_account td:nth-of-type(4) div {
+  width: 140;
+}
+.page_01.details .bank_account td:nth-of-type(5) div {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.page_01.details .bank_account tr:nth-last-of-type(1) td {
+  padding-bottom: 0;
+}
+.page_01.details .bank_account .footer_cap {
+  padding-top: 26.3448275862px;
+  text-align: center;
+}
+
+/* ====  page_02  ====*/
+.page_02 {
+  max-width: 186mm;
+  padding: 0 30px;
+}
+.page_02 * {
+  font-size: 9.24pt;
+}
+.page_02.header.first, .page_02.header.loop {
+  padding-top: 30px;
+}
+.page_02.header .page_ttl {
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  text-decoration: underline;
+  color: #000;
+}
+.page_02.header p,
+.page_02.header div {
+  padding: 0 4px 0;
+}
+.page_02.header .showseki_name,
+.page_02.header .closing_date {
+  text-align: right;
+}
+.page_02.details th {
+  text-align: center;
+  font-size: 10pt;
+  padding: 0 0 1px;
+  font-weight: bold;
+  color: #000;
+  border-top: 1px solid #499ec3;
+  border-right: 1px solid #499ec3;
+  border-bottom: 1px solid #499ec3;
+}
+.page_02.details tr th:nth-of-type(1) {
+  width: 86.5384615385%;
+  border-left: 1px solid #499ec3;
+}
+.page_02.details tr th:nth-of-type(2) {
+  width: 13.4615384615%;
+}
+.page_02.details tr td {
+  vertical-align: middle;
+  height: 17px;
+  line-height: 17px;
+  padding: 0 3px 1.2px 3px;
+  border-right: 1px solid #499ec3;
+}
+.page_02.details tr td:nth-of-type(1) {
+  border-left: 1px solid #499ec3;
+}
+.page_02.details tr td:nth-last-of-type(1) {
+  text-align: right;
+}
+.page_02.details tbody tr:nth-of-type(2n) {
+  background: #d6e2f0;
+}
+.page_02.details tbody tr:nth-last-of-type(1) td {
+  border-bottom: 1px solid #499ec3;
+}
+
+/* ====  page_03  ====*/
+.page_03 {
+  width: 100%;
+  max-width: 185mm;
+  padding: 0 2mm;
+  border-collapse: collapse;
+}
+.page_03.header.first {
+  padding-top: 15px;
+}
+.page_03.header .invoice_code {
+  width: 230.5172413793px;
+  border: 0.7mm solid #e1e7f4;
+  margin: 0 0 5px;
+}
+.page_03.header .invoice_code tr td {
+  font-size: 7.32pt;
+  padding: 8px 0;
+  text-align: center;
+}
+.page_03.header .invoice_code tr td:nth-of-type(1) {
+  border-right: solid 0.3mm #e1e7f4;
+  border-collapse: collapse;
+  width: 66.666%;
+}
+.page_03.header .invoice_code tr td:nth-of-type(2) {
+  width: 33.333%;
+}
+.page_03.header .invoice_code tr td p {
+  font-size: 7.32pt;
+  width: 100%;
+}
+.page_03.header .page_counter {
+  font-size: 7.32pt;
+  text-align: right;
+  padding-top: 8px;
+  padding-right: 26px;
+  padding-bottom: 20px;
+}
+.page_03.header .address__wrap {
+  width: 343.8px;
+  height: 36px;
+  font-size: 7.32pt;
+  padding-left: 39.5172413793px;
+}
+.page_03.header .address__wrap p {
+  font-size: 12.96pt;
+  line-height: 1;
+}
+.page_03.header .address__wrap p:nth-of-type(1) {
+  padding-bottom: 3px;
+}
+.page_03.header .address__wrap p:nth-of-type(2) {
+  line-height: 13pt;
+}
+.page_03.header .page_name {
+  width: 283.2068965517px;
+  height: 42px;
+  font-size: 14.4896551724px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.page_03.header .customer_name {
+  height: 36px;
+  font-size: 12.96pt;
+  padding: 24px 0 0 39.5172413793px;
+  width: 100%;
+}
+.page_03.header .showseki_logo {
+  height: 36px;
+}
+.page_03.header .showseki_logo img {
+  width: 276.6206896552px;
+}
+.page_03.header .greeting_dsc {
+  padding-top: 37px;
+  padding-bottom: 12px;
+}
+.page_03.header .greeting_dsc p {
+  font-size: 10.08pt;
+}
+.page_03.header .greeting_dsc p:nth-of-type(2) {
+  padding-bottom: 0.4mm;
+}
+.page_03.header .showseki_info {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-left: 46.1034482759px;
+}
+.page_03.header .showseki_info p {
+  font-size: 9.1632pt;
+}
+.page_03.header .total_for_delivery {
+  width: 413.6137931034px;
+  border: solid 3px #499ec3;
+  padding-right: 30px;
+  padding-bottom: 3px;
+  margin: 0;
+}
+.page_03.header .total_for_delivery p {
+  font-size: 12pt;
+  padding: 8.5px 0;
+  font-weight: bold;
+  width: -moz-max-content;
+  width: max-content;
+}
+.page_03.header .total_for_delivery tr td {
+  width: -moz-max-content;
+  width: max-content;
+}
+.page_03.header .total_for_delivery tr td:nth-of-type(1) p {
+  width: 210.7586206897px;
+  text-align: center;
+}
+.page_03.header .total_for_delivery tr td:nth-of-type(2) p {
+  width: 158.0689655172px;
+  text-align: right;
+}
+.page_03.header .showseki_info_dtl {
+  padding-left: 65.8620689655px;
+  border-top: 3px solid #dae1f2;
+  border-left: 3px solid #dae1f2;
+  border-collapse: collapse;
+}
+.page_03.header .showseki_info_dtl tr td {
+  font-size: 9.5pt;
+  padding: 0 0 0 3px;
+  border-right: 3px solid #dae1f2;
+  border-bottom: 3px solid #dae1f2;
+  border-collapse: collapse;
+}
+.page_03.header .showseki_info_dtl tr td:nth-of-type(1) {
+  width: 59.275862069px;
+}
+.page_03.header .showseki_info_dtl tr td:nth-of-type(2) {
+  width: 111.9655172414px;
+}
+.page_03.header .greeting_dsc_under_total {
+  font-size: 9pt;
+}
+.page_03.details_table_ttl__wrap p {
+  padding: 0 0 0 4px;
+}
+.page_03.details_table_ttl__wrap td p:nth-of-type(1) {
+  font-size: 9.24pt;
+}
+.page_03.details_table_ttl__wrap td p:nth-of-type(2) {
+  font-size: 10.08pt;
+}
+.page_03.loop_page_head {
+  padding-top: 20px;
+}
+.page_03.loop_page_head p {
+  line-height: 0.7 !important;
+}
+.page_03.loop_page_head .page_counter {
+  font-size: 7.32pt;
+  text-align: right;
+  padding-bottom: 5px;
+}
+.page_03.loop_page_head .customer_name,
+.page_03.loop_page_head .showseki_name,
+.page_03.loop_page_head .closing_date {
+  font-size: 9.24pt;
+  padding-bottom: 5px;
+}
+.page_03.loop_page_head .showseki_name,
+.page_03.loop_page_head .closing_date {
+  text-align: right;
+}
+.page_03.loop_page_head .delivery_name {
+  font-size: 10.08pt;
+  padding-bottom: 5px;
+}
+.page_03.details_list tr td:nth-of-type(1) {
+  width: 5.4680664917%;
+}
+.page_03.details_list tr td:nth-of-type(2) {
+  width: 10.9361329834%;
+}
+.page_03.details_list tr td:nth-of-type(3) {
+  width: 5.1563867017%;
+}
+.page_03.details_list tr td:nth-of-type(4) {
+  width: 28.1769466317%;
+}
+.page_03.details_list tr td:nth-of-type(5) {
+  width: 5.4680664917%;
+}
+.page_03.details_list tr td:nth-of-type(6) {
+  width: 5.1181102362%;
+}
+.page_03.details_list tr td:nth-of-type(7) {
+  width: 8.3278652668%;
+}
+.page_03.details_list tr td:nth-of-type(8) {
+  width: 4.2979002625%;
+}
+.page_03.details_list tr td:nth-of-type(9) {
+  width: 9.0332458443%;
+}
+.page_03.details_list tr td:nth-of-type(10) {
+  width: 7.0920822397%;
+}
+.page_03.details_list tr td:nth-of-type(11) {
+  width: 10.9361329834%;
+}
+.page_03.details_list tr:nth-of-type(2n) {
+  background: #d6e2f0;
+}
+.page_03.details_list tr:nth-of-type(1) td {
+  font-size: 8pt;
+  text-align: center !important;
+  border-top: solid 1px #499ec3;
+  border-bottom: solid 1px #499ec3;
+}
+.page_03.details_list tr:nth-last-of-type(1) td {
+  border-bottom: solid 1px #499ec3;
+}
+.page_03.details_list tr td {
+  vertical-align: middle;
+  font-size: 9pt;
+  height: 15px !important;
+  line-height: 0.7 !important;
+  padding: 0 3px 0;
+  text-align: center;
+  border-right: solid 1px #499ec3;
+}
+.page_03.details_list tr td:nth-of-type(1) {
+  border-left: solid 1px #499ec3;
+}
+.page_03.details_list tr td:nth-of-type(4) {
+  text-align: left;
+  padding-left: 4px;
+}
+.page_03.details_list tr td:nth-of-type(7), .page_03.details_list tr td:nth-of-type(9), .page_03.details_list tr td:nth-of-type(10), .page_03.details_list tr td:nth-of-type(11) {
+  text-align: right;
+  padding-right: 4px;
+}
+
+/*  ================================
+    ====    transport_report    ====
+    ================================ */
+.transport_report.header {
+  padding: 40px 0 0;
+}
+.transport_report.header tr td {
+  width: 33.3333333333%;
+}
+.transport_report.header .page_ttl {
+  font-size: 16px;
+  text-align: center;
+}
+.transport_report.header .date_page {
+  font-size: 11px;
+  text-align: right;
+  padding: 0 1em 0 0;
+}
+.transport_report.header .aggregation_period {
+  text-align: center;
+  font-size: 14px;
+  padding: 0 0 10px;
+}
+.transport_report.header .carrier_name {
+  font-size: 11px;
+  text-align: left;
+  padding: 0 0 0 0.5em;
+}
+.transport_report.body {
+  font-size: 10px;
+  border-top: 5px solid #0064ad;
+}
+.transport_report.body tr:nth-of-type(1) td {
+  text-align: center !important;
+}
+.transport_report.body tr td {
+  padding: 2px 3px;
+  border-right: solid 1px #222;
+  border-bottom: solid 1px #222;
+}
+.transport_report.body tr td:nth-of-type(1) {
+  border-left: solid 1px #222;
+  vertical-align: top !important;
+  text-align: center;
+  padding: 0;
+  width: 7%;
+}
+.transport_report.body tr td:nth-last-of-type(12) {
+  width: 5%;
+}
+.transport_report.body tr td:nth-last-of-type(11) {
+  width: 9%;
+}
+.transport_report.body tr td:nth-last-of-type(10) {
+  width: 15%;
+}
+.transport_report.body tr td:nth-last-of-type(9), .transport_report.body tr td:nth-last-of-type(8) {
+  width: 11%;
+}
+.transport_report.body tr td:nth-last-of-type(7) {
+  width: 10%;
+}
+.transport_report.body tr td:nth-last-of-type(6) {
+  width: 6%;
+}
+.transport_report.body tr td:nth-last-of-type(5) {
+  width: 5%;
+}
+.transport_report.body tr td:nth-last-of-type(4) {
+  width: 5%;
+}
+.transport_report.body tr td:nth-last-of-type(3) {
+  width: 6%;
+}
+.transport_report.body tr td:nth-last-of-type(2) {
+  width: 9%;
+}
+.transport_report.body tr td:nth-last-of-type(1) {
+  width: 2.5%;
+}
+
+/*  ================================
+    ==    vehicle_fare_details    ==
+    ================================ */
+.vehicle_fare_details {
+  max-width: 180mm;
+}
+.vehicle_fare_details.header {
+  padding: 40px 0 0;
+}
+.vehicle_fare_details.header tr td {
+  width: 33.3333333333%;
+}
+.vehicle_fare_details.header .page_ttl {
+  font-size: 16px;
+  text-align: center;
+}
+.vehicle_fare_details.header .date_page {
+  font-size: 11px;
+  text-align: right;
+  padding: 0 1em 0 0;
+}
+.vehicle_fare_details.header .aggregation_period {
+  text-align: center;
+  font-size: 14px;
+  padding: 0 0 10px;
+}
+.vehicle_fare_details.header .carrier_name,
+.vehicle_fare_details.header .carrier_num,
+.vehicle_fare_details.header .vehicle_classification {
+  font-size: 11px;
+  text-align: left;
+  padding: 0 0 0 0.5em;
+}
+.vehicle_fare_details.body {
+  font-size: 10px;
+  border-top: 5px solid #0064ad;
+}
+.vehicle_fare_details.body tr:nth-of-type(1) td {
+  text-align: center !important;
+  padding: 2px 3px !important;
+}
+.vehicle_fare_details.body tr td {
+  padding: 2px 3px;
+  border-right: solid 1px #222;
+  border-bottom: solid 1px #222;
+  width: 25%;
+}
+.vehicle_fare_details.body tr td:nth-of-type(1) {
+  border-left: solid 1px #222;
+  text-align: center;
+}
+.vehicle_fare_details.body tr td:nth-of-type(2), .vehicle_fare_details.body tr td:nth-of-type(3) {
+  padding-right: 32%;
+  text-align: right;
+}
+.vehicle_fare_details.body tr td:nth-of-type(4) {
+  text-align: center;
+}
+
+html {
+  font-size: 13px;
+}
+
+* {
+  font-family: hanserifjp;
+  color: #333;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+}
+
+.invoice-box {
+  max-width: 187.76mm;
+  width: 100%;
+  margin: auto;
+}
+.invoice-box .page-break {
+  page-break-before: always !important;
+}
+.invoice-box .d-none {
+  display: none;
+}
+.invoice-box table {
+  width: 100%;
+  line-height: 1;
+  text-align: left;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+/* ====  page_01  ====*/
+.page_01 {
+  max-width: 187.759mm;
+}
+.page_01.header {
+  padding-top: 0;
+}
+.page_01.header tr td p {
+  padding: 0.3em 0 0.3em 0;
+}
+.page_01.header tr td:nth-of-type(1) {
+  width: 12%;
+}
+.page_01.header tr td:nth-of-type(1) p {
+  width: 100%;
+}
+.page_01.header tr td:nth-of-type(2) {
+  width: 44%;
+}
+.page_01.header tr td:nth-of-type(2) p {
+  width: 100%;
+  padding-left: 0.5em;
+}
+.page_01.header tr td:nth-of-type(3) {
+  width: 11%;
+}
+.page_01.header tr td:nth-of-type(4) {
+  width: 33%;
+}
+.page_01.header .ttl_dsc {
+  padding: 0 0 0 2em;
+}
+.page_01.header .com_logo {
+  width: 60%;
+  padding: 0 0 0 8em;
+}
+.page_01.header .com_logo img {
+  width: 100%;
+}
+.page_01.header .bg_black {
+  width: 100%;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  border: 1px solid #fff;
+}
+.page_01.header .bank {
+  padding: 0.8em 0;
+}
+.page_01.header .bank_dtl {
+  padding: 0;
+}
+.page_01.header .delivery_address {
+  font-size: 0.95em;
+}
+.page_01.header .full_total {
+  padding: 1.55em 0;
+}
+.page_01.header .full_total_num {
+  font-size: 2em;
+  border: #333 0.5px solid;
+  text-align: right;
+  width: 94%;
+}
+.page_01.header .customer_address__wrap {
+  width: 100%;
+}
+.page_01.header .customer_address__wrap .postal {
+  font-size: 0.95em;
+  padding: 2em 0 0.1em 0;
+}
+.page_01.header .customer_address__wrap .address {
+  font-size: 0.95em;
+  padding: 0 0 0.3em 0;
+}
+.page_01.header .customer_address__wrap .customer_name {
+  padding: 0 0 0.3em 0;
+}
+.page_01.header .customer_address__wrap .t_num {
+  font-size: 12px;
+  padding: 0 0 0 0;
+}
+.page_01.header .page_ttl {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 0.5 0 1em 10em;
+  text-align: center;
+}
+.page_01.header .published_date {
+  text-align: center;
+}
+.page_01.header .lux_info p {
+  font-size: 10px;
+  padding: 0 0 0.1em 10em;
+}
+.page_01.header .lux_info p:nth-last-of-type(1) {
+  padding: 0.6em 0 0 10em;
+}
+.page_01.details {
+  padding-top: 3em;
+}
+.page_01.details th {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 0.3em 0 0.3em 0;
+  border-right: solid 0.5px #fff;
+}
+.page_01.details td.pd {
+  padding: 0.3em 1em;
+}
+.page_01.details td p {
+  width: 100%;
+}
+.page_01.details td:nth-of-type(1) {
+  width: 56%;
+}
+.page_01.details td:nth-of-type(2) {
+  width: 8%;
+  text-align: center;
+}
+.page_01.details td:nth-of-type(3) {
+  width: 8%;
+  text-align: center;
+}
+.page_01.details td:nth-of-type(4), .page_01.details td:nth-of-type(5) {
+  text-align: right;
+  width: 14%;
+}
+.page_01.details td {
+  font-size: 10.5pt;
+  border-bottom: 1px solid #555;
+}
+.page_01.total > tr > td {
+  border: none;
+  text-align: right;
+}
+.page_01.total > tr > td .pd {
+  padding: 0.3em 1em;
+}
+.page_01.total > tr > td.bb {
+  border-bottom: solid 1px #333 !important;
+}
+.page_01.total > tr > td:nth-of-type(1) {
+  width: 56%;
+}
+.page_01.total > tr > td:nth-of-type(2) {
+  width: 8%;
+  text-align: center;
+}
+.page_01.total > tr > td:nth-of-type(3) {
+  width: 8%;
+  text-align: center;
+}
+.page_01.total > tr > td:nth-last-of-type(2), .page_01.total > tr > td:nth-last-of-type(1) {
+  text-align: right;
+  width: 14%;
+}
+.page_01.total .tax {
+  padding: 0.3em 0 0;
+}
+.page_01.total .tax th,
+.page_01.total .tax td {
+  padding: 0.3em 1em;
+}
+.page_01.total .tax th {
+  background: #dfdfdf;
+}
+.page_01.total .tax td {
+  width: 25%;
+  text-align: right;
+}
+
+.remarks {
+  padding: 1em 0;
+}
+.remarks .txt_remarks {
+  width: 100%;
+  height: 50px;
+  padding: 1em 1em;
+  border: 1px solid #555;
+  background: #efefef;
+  border-radius: 8px;
+}
+.remarks .txt_remarks.full {
+  width: 96%;
+}
+.remarks.receipt tr td:nth-of-type(1) {
+  width: 72%;
+}
+.remarks.receipt tr td:nth-of-type(1) {
+  width: 28%;
+}
+.remarks.receipt .revenue_stamp {
+  width: 50px;
+  height: 60px;
+  margin: 10px auto;
+  border: dotted 2px #333;
+  text-align: center;
+  font-size: 0.9em;
+}/*# sourceMappingURL=luxjapan_style.css.map */

@@ -1,0 +1,127 @@
+@page {
+    margin: 0;
+}
+
+@font-face {
+    font-family: "kozuka", sans-serif;
+    font-style: normal;
+    font-weight: normal, bold;
+    src: url('{{ storage_path("fonts/pr6n-r.ttf")}}') format("truetype");
+}
+
+@font-face {
+    font-family: "msmincho";
+    font-style: normal;
+    font-weight: normal, bold;
+    src: url('{{ storage_path("fonts/msmincho.TTF") }}') format("truetype");
+}
+
+@font-face {
+    font-family: "NotoSerifJP-Bold";
+    font-style: normal;
+    font-weight: bold;
+    src: url('{{ storage_path("fonts/NotoSerifJP-Bold.ttf")}}') format("truetype");
+}
+
+body {
+    margin: 0;
+}
+
+* {
+    font-family: "MS Mincho", "msmincho", serif;
+    color: #4f4f4f;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.invoice-box {
+    max-width: 187.76mm;
+    width: 100%;
+    margin: auto;
+
+    .page-break {
+        page-break-before: always !important;
+    }
+
+    .kozuka {
+        font-family: kozuka, sans-serif;
+    }
+
+    table {
+        width: 100%;
+        line-height: 1;
+        text-align: left;
+        border-collapse: collapse;
+        margin: 0 auto;
+    }
+    .txt_c {
+        text-align: center !important;
+    }
+    .txt_r {
+        text-align: right !important;
+    }
+    .txt_l {
+        text-align: left !important;
+    }
+    .white {
+        color: white;
+    }
+    .bold {
+        // font-family: "NotoSerifJP-Bold";
+        // font-weight: bold;
+        color: #000;
+    }
+    .footer_cap {
+        font-size: 6.8pt;
+        text-align: center;
+    }
+}
+
+
+/*  ================================
+        ====     transportation     ====
+        ================================ */
+.transportation_report {
+    padding: 5.8mm 12.4mm 0 13mm;
+}
+
+.transportation_report .page-break {
+    page-break-after: always;
+}
+
+.transportation_report.body {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    width: 100%;
+    line-height: 1;
+    font-size: 10px;
+    margin-top: 15px;
+}
+
+.transportation_report.body tr:nth-of-type(1) td {
+    border-top: 2mm solid #0064ad;
+    text-align: center !important;
+}
+
+.transportation_report.body tr:nth-last-of-type(1) td:nth-of-type(1),
+.transportation_report.body tr:nth-last-of-type(2) td:nth-of-type(1) {
+    text-align: left;
+}
+
+.transportation_report.body td {
+    font-size: 10px;
+    padding: 3px 5px;
+    text-align: left;
+    border-right: solid 1px #222;
+    border-bottom: solid 1px #222;
+}
+
+.transportation_report.body tr td:nth-of-type(1) {
+    border-left: solid 1px #222;
+}
+
+.transportation_report.body tr td:nth-of-type(2),
+.transportation_report.body tr td:nth-of-type(3) {
+    text-align: left;
+}

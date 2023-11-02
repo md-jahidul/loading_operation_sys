@@ -1,0 +1,77 @@
+StartFontMetrics 4.1
+Notice Converted by PHP-font-lib
+Comment https://github.com/PhenX/php-font-lib
+EncodingScheme FontSpecific
+Copyright unfixed
+FontName NotoSerifJP-Bold
+FontSubfamily Regular
+UniqueID NotoSerifJP-Bold
+FullName NotoSerifJP-Bold
+Version Version 1.0
+PostScriptName NotoSerifJP-Bold
+Trademark NotoSerifJP-Bold
+Weight Bold
+ItalicAngle 0
+IsFixedPitch false
+UnderlineThickness 50
+UnderlinePosition -125
+FontHeightOffset 90
+Ascender 841
+Descender -264
+FontBBox 2 -264 1013 841
+StartCharMetrics 54
+U 32 ; WX 1000 ; N uni0020 ; G 1
+U 65313 ; WX 1000 ; N uniff21 ; G 2
+U 65314 ; WX 1000 ; N uniff22 ; G 3
+U 65315 ; WX 1000 ; N uniff23 ; G 4
+U 65316 ; WX 1000 ; N uniff24 ; G 5
+U 65317 ; WX 1000 ; N uniff25 ; G 6
+U 65318 ; WX 1000 ; N uniff26 ; G 7
+U 65319 ; WX 1000 ; N uniff27 ; G 8
+U 65320 ; WX 1000 ; N uniff28 ; G 9
+U 65321 ; WX 1000 ; N uniff29 ; G 10
+U 65322 ; WX 1000 ; N uniff2a ; G 11
+U 65323 ; WX 1000 ; N uniff2b ; G 12
+U 65324 ; WX 1000 ; N uniff2c ; G 13
+U 65325 ; WX 1000 ; N uniff2d ; G 14
+U 65326 ; WX 1000 ; N uniff2e ; G 15
+U 65327 ; WX 1000 ; N uniff2f ; G 16
+U 65328 ; WX 1000 ; N uniff30 ; G 17
+U 65329 ; WX 1000 ; N uniff31 ; G 18
+U 65330 ; WX 1000 ; N uniff32 ; G 19
+U 65331 ; WX 1000 ; N uniff33 ; G 20
+U 65332 ; WX 1000 ; N uniff34 ; G 21
+U 65333 ; WX 1000 ; N uniff35 ; G 22
+U 65334 ; WX 1000 ; N uniff36 ; G 23
+U 65335 ; WX 1000 ; N uniff37 ; G 24
+U 65336 ; WX 1000 ; N uniff38 ; G 25
+U 65337 ; WX 1000 ; N uniff39 ; G 26
+U 65338 ; WX 1000 ; N uniff3a ; G 27
+U 65345 ; WX 1000 ; N uniff41 ; G 28
+U 65346 ; WX 1000 ; N uniff42 ; G 29
+U 65347 ; WX 1000 ; N uniff43 ; G 30
+U 65348 ; WX 1000 ; N uniff44 ; G 31
+U 65349 ; WX 1000 ; N uniff45 ; G 32
+U 65350 ; WX 1000 ; N uniff46 ; G 33
+U 65351 ; WX 1000 ; N uniff47 ; G 34
+U 65352 ; WX 1000 ; N uniff48 ; G 35
+U 65353 ; WX 1000 ; N uniff49 ; G 36
+U 65354 ; WX 1000 ; N uniff4a ; G 37
+U 65355 ; WX 1000 ; N uniff4b ; G 38
+U 65356 ; WX 1000 ; N uniff4c ; G 39
+U 65357 ; WX 1000 ; N uniff4d ; G 40
+U 65358 ; WX 1000 ; N uniff4e ; G 41
+U 65359 ; WX 1000 ; N uniff4f ; G 42
+U 65360 ; WX 1000 ; N uniff50 ; G 43
+U 65361 ; WX 1000 ; N uniff51 ; G 44
+U 65362 ; WX 1000 ; N uniff52 ; G 45
+U 65363 ; WX 1000 ; N uniff53 ; G 46
+U 65364 ; WX 1000 ; N uniff54 ; G 47
+U 65365 ; WX 1000 ; N uniff55 ; G 48
+U 65366 ; WX 1000 ; N uniff56 ; G 49
+U 65367 ; WX 1000 ; N uniff57 ; G 50
+U 65368 ; WX 1000 ; N uniff58 ; G 51
+U 65369 ; WX 1000 ; N uniff59 ; G 52
+U 65370 ; WX 1000 ; N uniff5a ; G 53
+EndCharMetrics
+EndFontMetrics

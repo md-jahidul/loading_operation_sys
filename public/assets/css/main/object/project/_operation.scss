@@ -1,0 +1,45 @@
+#page_operator {
+    width: 100vw;
+    > * {
+        width: 100%;
+    }
+    header {
+        width: 100%;
+        font-size: 3vh;
+        height: 6vh;
+        line-height: 6vh;
+        background: #eee;
+        color: #222;
+    }
+    .main {
+        .slips__wrap {
+            width: 100vw;
+            height: 84vh;
+            label {
+                transition: all 0.3s ease-in;
+                row-gap: 0.5em;
+                padding: 0.5em;
+            }
+            label:has(input:checked) {
+                color: #000;
+                background: #c2fffe;
+                box-shadow: inset 1px 1px 6px #333;
+            }
+            .slip_elem {
+                width: 23vw;
+                height: 14vh;
+                border: 1px solid #555;
+            }
+        }
+    }
+    footer {
+        .btn__wrap {
+            a,
+            button {
+                display: block;
+                height: 10vh;
+                box-shadow: 1px 1px 4px #333;
+            }
+        }
+    }
+}

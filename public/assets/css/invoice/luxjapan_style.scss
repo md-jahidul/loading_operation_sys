@@ -1,0 +1,259 @@
+@charset "UTF-8";
+@use "invoice_master";
+
+html {
+    font-size: 13px;
+}
+* {
+    font-family: hanserifjp;
+    color: #333;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+}
+.invoice-box {
+    max-width: 187.76mm;
+    width: 100%;
+    margin: auto;
+
+    .page-break {
+        page-break-before: always !important;
+    }
+    .d-none {
+        display: none;
+    }
+    table {
+        width: 100%;
+        line-height: 1;
+        text-align: left;
+        border-collapse: collapse;
+        margin: 0 auto;
+    }
+}
+
+/* ====  page_01  ====*/
+.page_01 {
+    max-width: 187.759mm;
+
+    &.header {
+        padding-top: 0;
+        tr td {
+            p {
+                padding: 0.3em 0 0.3em 0;
+            }
+            &:nth-of-type(1) {
+                width: 12%;
+                p {
+                    width: 100%;
+                }
+            }
+            &:nth-of-type(2) {
+                width: 44%;
+                p {
+                    width: 100%;
+                    padding-left: 0.5em;
+                }
+            }
+            &:nth-of-type(3) {
+                width: 11%;
+            }
+            &:nth-of-type(4) {
+                width: 33%;
+            }
+        }
+
+        .ttl_dsc {
+            padding: 0 0 0 2em;
+        }
+        .com_logo {
+            width: 60%;
+            padding: 0 0 0 8em;
+
+            img {
+                width: 100%;
+            }
+        }
+        .bg_black {
+            width: 100%;
+            background: #333;
+            color: #fff;
+            text-align: center;
+            border: 1px solid #fff;
+        }
+        .bank {
+            padding: 0.8em 0;
+        }
+        .bank_dtl {
+            padding: 0;
+        }
+        .delivery_address{
+            font-size: 0.95em;
+        }
+
+
+        .full_total {
+            padding: 1.55em 0;
+        }
+        .full_total_num {
+            font-size: 2em;
+            border: #333 0.5px solid;
+            text-align: right;
+            width: 94%;
+        }
+
+        .customer_address__wrap {
+            width: 100%;
+            .postal {
+                font-size: 0.95em;
+                padding: 2em 0 0.1em 0;
+            }
+            .address {
+                font-size: 0.95em;
+                padding: 0 0 0.3em 0;
+            }
+            .customer_name {
+                padding: 0 0 0.3em 0;
+            }
+            .t_num {
+                font-size: 12px;
+                padding: 0 0 0 0;
+            }
+        }
+        .page_ttl {
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 0.5 0 1em 10em;
+            text-align: center;
+        }
+
+        .published_date {
+            text-align: center;
+            // padding: 0 0 0 10em;
+        }
+
+        .lux_info {
+            p {
+                font-size: 10px;
+                padding: 0 0 0.1em 10em;
+                &:nth-last-of-type(1) {
+                    padding: 0.6em 0 0 10em;
+                }
+            }
+        }
+    }
+
+    &.details {
+        padding-top: 3em;
+        th {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 0.3em 0 0.3em 0;
+            border-right: solid 0.5px #fff;
+        }
+        td {
+            &.pd {
+                padding: 0.3em 1em;
+            }
+            p {
+                width: 100%;
+            }
+            &:nth-of-type(1) {
+                width: 56%;
+            }
+            &:nth-of-type(2) {
+                width: 8%;
+                text-align: center;
+            }
+            &:nth-of-type(3) {
+                width: 8%;
+                text-align: center;
+            }
+            &:nth-of-type(4),
+            &:nth-of-type(5) {
+                text-align: right;
+                width: 14%;
+            }
+        }
+
+        td {
+            font-size: 10.5pt;
+            border-bottom: 1px solid #555;
+        }
+    }
+    &.total {
+        > tr > td {
+            border: none;
+            text-align: right;
+            .pd {
+                padding: 0.3em 1em;
+            }
+            &.bb {
+                border-bottom: solid 1px #333 !important;
+            }
+            &:nth-of-type(1) {
+                width: 56%;
+            }
+            &:nth-of-type(2) {
+                width: 8%;
+                text-align: center;
+            }
+            &:nth-of-type(3) {
+                width: 8%;
+                text-align: center;
+            }
+            &:nth-last-of-type(2),
+            &:nth-last-of-type(1) {
+                text-align: right;
+                width: 14%;
+            }
+        }
+        .tax {
+            padding: 0.3em 0 0;
+            th,
+            td {
+                padding: 0.3em 1em;
+            }
+            th {
+                background: #dfdfdf;
+            }
+            td {
+                width: 25%;
+                text-align: right;
+            }
+        }
+    }
+}
+.remarks {
+    padding: 1em 0;
+    .txt_remarks {
+        width: 100%;
+        height: 50px;
+        padding: 1em 1em;
+        border: 1px solid #555;
+        background: #efefef;
+        border-radius: 8px;
+        &.full {
+            width: 96%;
+        }
+    }
+
+    &.receipt{
+        tr td{
+            &:nth-of-type(1){
+                width: 72%;
+            }
+            &:nth-of-type(1){
+                width: 28%;
+            }
+        }
+        .revenue_stamp {
+            width: 50px;
+            height: 60px;
+            margin: 10px auto;
+            border: dotted 2px #333;
+            text-align: center;
+            font-size: 0.9em;
+        }
+    }
+}
