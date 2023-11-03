@@ -32,7 +32,7 @@
                                         <input type="radio" value="{{ $item->id }}" name="loadingData" class="" id="loadingData[{{ $index }}]" style="display: none;">
                                         <p class="vehicle_number"><b>{{ $item->vehicle_number }}</b></p>
                                         <div class="between">
-                                            <p class="product_name"><b>{{ $item->product_name_code }}</b></p>
+                                            <p class="product_name"><b>{{ $item->product_name_code }}</p></b>
                                             <p class="product_amount">{{ $item->specified_quantity }}</p>
                                         </div>
                                         <p class="delivery_name"><b>{{ $item->masterDelivery['delivery_name'] ?? null }}</b></p>

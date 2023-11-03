@@ -30,7 +30,8 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/operators', [OperatorController::class, 'index'])->name('operators.index');
     Route::get('/assign-driver', [OperatorController::class, 'assignDriver']);
-    Route::get('/operator-view-route/{machineId}', [OperatorController::class, 'getOperatorViewRoute']);
+    Route::get('/operator-view-route/{machineId}', [OperatorController::class, 'getOperatorViewRoute'])
+        ->name('operator-view-route');
     Route::post('/operator-change-status/{segmentId}', [OperatorController::class, 'operatorChangeStatus']);
 });
 

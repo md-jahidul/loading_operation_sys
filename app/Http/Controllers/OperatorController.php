@@ -30,7 +30,8 @@ class OperatorController extends Controller
         if (isset($product) && isset($request['SegmentId'])) {
             $data = [
                 "entry_time" => Carbon::now(),
-                "assign_driver" => $request['DriverId']
+                "assign_driver" => $request['DriverId'],
+                "status_type" => 1
             ];
             $product->update($data);
             return "Success";
